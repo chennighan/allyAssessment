@@ -431,7 +431,7 @@ footer .footerLinks li {
 
 
 /* ----- begin media queries ----- */
-@media (max-width: 360px) {
+@media (max-width: 640px) {
     .bestBankColumn {
         max-height: 50em;
     }
