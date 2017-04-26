@@ -421,3 +421,110 @@ footer .footerLinks li {
     cursor: pointer;
 }
 /* ----- end modal section ----- */
+
+
+
+/* ----- begin media queries ----- */
+@media (max-width: 768px) {
+    .phoneOuter {
+        display: none;
+    }
+    .loginButton {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .loginButton {
+        margin-top: 2em;
+    }
+    .phoneOuter {
+        position: relative;
+        top: -5em;
+        width: 5em;
+        height: 9em;
+        min-width: 5em;
+        min-height: 9em;
+        border: solid 5px #7ABEBE;
+        border-radius: 12.5px;
+        background: #FFF;
+        margin-right: 0.5em;
+    }
+    .camera {
+        position: absolute;
+        top: 0.25em;
+        right: 2em;
+        width: 0.2em;
+        height: 0.2em;
+        background: #61778D;
+        border-radius: 0.5em;
+    }
+    .speaker {
+        position: absolute;
+        top: 0.625em;
+        right: 1.65em;
+        width: 1em;
+        height:0.25em;
+        background:#61778D;
+        border-radius: 0.5em;
+    }
+    .screen {
+        position: absolute;
+        top: 1.075em;
+        right: 0.25em;
+        width: 3.75em;
+        height:6em;
+        background:#DDEAE0;
+    }
+    .contentTitle {
+        position: absolute;
+        top: 0.25em;
+        left: 0.375em;
+        width: 3em;
+        height:0.75em;
+        background:#60A0D1;
+    }
+    .contentLine1 {
+        position: absolute;
+        top: 1.75em;
+        left: 0.375em;
+        width: 2.125em;
+        height:0.2em;
+        background:#61778D;
+    }
+    .contentLine2 {
+        position: absolute;
+        top: 2.25em;
+        left: 0.375em;
+        width: 3.125em;
+        height:0.2em;
+        background:#61778D;
+    }
+    .contentLine3 {
+        position: absolute;
+        top: 2.75em;
+        left: 0.375em;
+        width: 2.375em;
+        height:0.2em;
+        background:#61778D;
+    }
+    .contentSubmitButton {
+        position: absolute;
+        bottom: 0.375em;
+        left: 0.25em;
+        width: 3.25em;
+        height:0.625em;
+        border-radius: 0.125em;
+        background:#60A0D1;
+    }
+    .homeButton {
+        position: absolute;
+        bottom: 0.125em;
+        left: 1.875em;
+        width: 0.75em;
+        height:0.75em;
+        border-radius: 0.5em;
+        background:#7ABEBE;
+    }
+}
+/* ----- end media queries ----- */
