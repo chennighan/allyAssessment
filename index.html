@@ -35,8 +35,8 @@
 
         <div class="pageWrapper">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
-                    <h1 class="purpleFont">Best Bank Ever</h1>
+                <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 bestBankColumn">
+                    <h1 class="purpleFont">Best Bank Ever!</h1>
 
                     <!-- begin initial description/copy -->
                     <p>
@@ -59,20 +59,35 @@
                     <!-- begin amazing mobile section -->
                     <div class="amazingMobileContainer">
                         <h4 class="amazingMobileHeader purpleFont">Amazing Mobile Info</h4>
-                        <p>
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-                            tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-                        </p>
+
+                        <div class="row amazingRow">
+                            <div class="col-xs-12 col-sm-6 col-md-8">
+                                <p>
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+                                    tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                                <!-- I have literally never made a graphic like this but it was cool and fun to make, no idea if this is how you wanted it -->
+                                <div class="phoneOuter pull-right">
+                                    <div class="camera"></div>
+                                    <div class="speaker"></div>
+                                    <div class="screen">
+                                        <div class="contentTitle"></div>
+                                        <div class="contentLine1"></div>
+                                        <div class="contentLine2"></div>
+                                        <div class="contentLine3"></div>
+                                        <div class="contentSubmitButton"></div>
+                                    </div>
+                                    <div class="homeButton"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <!--
-                    <div class="phoneOuter">
-
-                    </div> -->
                 </div>
                 <!-- login and news section -->
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <a href="#" class="btn btn-default form-control loginButton">Login</a>
+                    <a id="loginButton" href="#" class="btn btn-default form-control loginButton">Login</a>
 
                     <div class="tabContainer">
                         <ul class="tabs">
@@ -150,6 +165,42 @@
                 <a href="#">&copy; 2014 URBank</a>
             </div>
         </footer>
+
+        <!-- begin modal section -->
+        <div id="overlay"></div>
+        <div id="loginModal">
+            <div class="loginModalContainer">
+                <span class="glyphicon glyphicon-remove closeButton" aria-hidden="true"></span>
+
+                <form action="#" method="post">
+                    <h3>Sign In To Your Account</h3><br />
+
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <label class="control-label" for="username">Username</label>
+                        </div>
+                        <div class="col-xs-10">
+                            <input type="text" id="username" name="username" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <label class="control-label" for="password">Password</label>
+                        </div>
+                        <div class="col-xs-10">
+                            <input type="text" id="password" name="password" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a id="modalLoginButton" href="#" class="btn btn-default loginButton pull-right">Login</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/main.js"></script>

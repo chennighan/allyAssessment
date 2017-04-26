@@ -31,7 +31,13 @@ $(function() {
 
     // utility function to setup the event listener for the tabs section
     function setupTabs() {
-        $('ul.tabs li').click(function(){
+        // initially modify the selected tab padding (will always initially be 1)
+        var currentTab = $('.current');
+        currentTab.css('padding-top', '1.5em');
+        currentTab.css('margin-right', '-0.275em');
+
+        // Another instance where a library would be useful.
+        $('ul.tabs li').click(function() {
             var tab_id = $(this).attr('data-tab');
             var unselectedTab = $('ul.tabs li');
 
@@ -40,9 +46,12 @@ $(function() {
                 $(this).addClass('tabLeftBorder');
             } else {
                 unselectedTab.removeClass('tabLeftBorder');
+                unselectedTab.css('margin-right', '-0.275em');
             }
 
             unselectedTab.removeClass('current');
+            unselectedTab.css('padding-top', '0.5em');
+            $(this).css('padding-top', '1.5em');
             $('.tab-content').removeClass('current');
 
             $(this).addClass('current');
@@ -50,10 +59,48 @@ $(function() {
         });
     }
 
+    // utility function to setup the event listener for the login button
+    function setupLoginButton() {
+        // as part of init, we can just automatically disable both the overlay and modal in case for some reason it is active
+        var loginModal = $("#loginModal");
+        loginModal.css('opacity', '0');
+        loginModal.css('z-index', '-10');
+
+        var overlay = $('#overlay');
+        overlay.css('display', 'none');
+        overlay.css('z-index', '-10');
+
+        $("#loginButton").click(function() {
+            // when you click the login button, you need to fire the modal
+            var loginModal = $("#loginModal");
+            loginModal.css('opacity', '1');
+            loginModal.css('z-index', '999');
+
+            var overlay = $('#overlay');
+            overlay.css('display', 'block');
+            overlay.css('z-index', '999');
+        });
+    }
+
+    function setupModalCloseButton() {
+        $(".closeButton").click(function() {
+            // hide the modal and overlay when the close button is clicked
+            var loginModal = $("#loginModal");
+            loginModal.css('opacity', '0');
+            loginModal.css('z-index', '-10');
+
+            var overlay = $('#overlay');
+            overlay.css('display', 'none');
+            overlay.css('z-index', '-10');
+        });
+    }
+
     // initialize everything in one place
     function init() {
         loadJson();
         setupTabs();
+        setupLoginButton();
+        setupModalCloseButton();
     }
 
     init();
