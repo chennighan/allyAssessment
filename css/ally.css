@@ -1,0 +1,271 @@
+/* ----- begin defaults ----- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    height: 100%;
+}
+h1,h2,h3,h4 {
+    margin-bottom: 0.75em;
+}
+h1 {
+    font-weight: 100;
+    margin-top: 0;
+}
+p a {
+    color: #60A0D1;
+    display: inline;
+    text-decoration: underline;
+}
+a:hover {
+    cursor: pointer;
+}
+.purpleFont {
+    color: #630C63;
+}
+/* ----- end defaults ----- */
+
+
+
+
+/* ----- begin page wrapper ----- */
+.pageWrapper {
+    width: 90%;
+    height: 100%;
+    padding: 5%;
+    margin-top: -1em;
+    min-height: 100%;
+    margin-bottom: -15em;
+}
+.pageWrapper:after {
+    content: "";
+    display: block;
+}
+/* ----- end page wrapper ----- */
+
+.phoneOuter {
+    width: 10em;
+    height: 18em;
+    min-width: 10em;
+    min-height: 18em;
+    border: solid 5px #7ABEBE;
+    border-radius: 25px;
+}
+
+
+
+
+/* ----- begin nav bar ----- */
+.headerWrapper {
+    width: 90%;
+}
+.headerTitle {
+    text-align: left;
+    position: relative;
+    color: #1E2B4E;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-left: 0 !important;
+    display: block;
+    padding-top: 1.5em;
+}
+.headerTitle:hover {
+    cursor: default;
+}
+.headerLogo {
+    float: left !important;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+nav ul {
+    padding-left: 0;
+    list-style: none;
+    position: relative;
+    text-align: left;
+}
+nav ul li {
+    float: right;
+}
+/* clear'n floats */
+nav ul:after {
+    clear: both;
+}
+nav ul:before,
+nav ul:after {
+    content: " ";
+    display: table;
+}
+nav {
+    position: relative;
+    background: #006998;
+    background-image: -webkit-linear-gradient(bottom, #338EC1 7%, #006998 100%);
+    background-image: -moz-linear-gradient(bottom, #338EC1 7%, #006998 100%);
+    background-image: -o-linear-gradient(bottom, #338EC1 7%, #006998 100%);
+    background-image: linear-gradient(bottom, #338EC1 7%, #006998 100%);
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #0E0E0E;
+    padding: 0 5% 0 5%;
+}
+nav ul.primary li a {
+    display: block;
+    padding: 20px 30px;
+}
+nav ul.primary li a:hover {
+    font-weight: bold;
+    background: #006998;
+    color: #FFF;
+    text-decoration: none;
+}
+/* ----- end nav bar ----- */
+
+
+
+
+/* ----- begin reason section ----- */
+.reasonsHeader {
+    font-weight: bold;
+    margin-top: 1.25em;
+}
+.reasonsList {
+    padding-left: 1em;
+}
+/* ----- end reason section ----- */
+
+
+
+
+/* ----- begin amazing mobile section ----- */
+.amazingMobileContainer {
+    background: #BAD7C3;
+    width: 100%;
+    margin-top: 1.5em;
+    padding: 1em;
+}
+.amazingMobileHeader {
+    margin-top: 0;
+    font-weight:bold;
+}
+/* ----- end amazing mobile section ----- */
+
+
+
+
+/* ----- begin rates section ----- */
+.ratesTableHeaders span, .ratesTableFooters span {
+    font-size: 0.75em;
+}
+.ratesHeader {
+    margin-top: 2em;
+    font-weight: lighter;
+}
+.ratesHeader span {
+    border-right: solid 1px;
+    padding-right: 0.25em;
+}
+.ratesBankName, .ratesBankPercentYield, .ratesBankYearEarnings {
+    list-style: none;
+}
+.ratesRow {
+    padding: 1em;
+}
+.ratesRow:hover {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.ratesOddRow {
+    background: #DDEAE0;
+}
+.ratesEvenRow {
+    background: #EDF5ED;
+}
+/* ----- end rates section ----- */
+
+
+
+
+/* ----- begin login section ----- */
+.loginButton {
+    background: #630C63;
+    color: #FFF;
+    font-weight: 300;
+    border-radius: 0;
+}
+.loginButton:hover {
+    background: #490949;
+    color: #FFF;
+    font-weight:bold;
+}
+/* ----- end login section ----- */
+
+
+
+
+/* ----- begin news and archive section ----- */
+.tabcontainer {
+    height: 100%;
+}
+ul.tabs {
+    margin: 2.5em 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+ul.tabs li {
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+ul.tabs li.current {
+    background: #F5F5F5;
+    border-top: solid 1px #DFDFDF;
+    border-right: solid 1px #DFDFDF;
+    color: #222;
+}
+.tabLeftBorder {
+    border-left: solid 1px #DFDFDF;
+}
+.tab-content {
+    display: none;
+    background: #F5F5F5;
+    padding: 1.5em;
+}
+.tab-content.current {
+    display: inherit;
+    border-top: solid 1px #DFDFDF;
+    margin-top: -0.1em;
+}
+.tab-content.current h5 {
+    color: #60A0D1;
+}
+
+.tab-content.current span {
+    padding-bottom: 1em;
+}
+/* ----- end news and archive section ----- */
+
+
+
+
+/* ----- begin footer ----- */
+.footerWrapper {
+    width: 90%;
+}
+footer {
+    padding: 1em 5% 0 5%;
+    background: #E6E6E6;
+}
+footer, .pageWrapper:after {
+    height: 15em;
+}
+footer .footerLinks {
+    list-style: none;
+}
+footer .footerLinks li {
+    float: right;
+    display: block;
+    padding: 0 1em 0 1em;
+}
+/* ----- end footer ----- */
