@@ -431,6 +431,11 @@ footer .footerLinks li {
 
 
 /* ----- begin media queries ----- */
+@media (max-width: 360px) {
+    .bestBankColumn {
+        max-height: 50em;
+    }
+}
 @media (max-width: 768px) {
     .phoneOuter {
         display: none;
