@@ -2,7 +2,7 @@ $(function() {
     // utility function to load the json from a remote location
     function loadJson() {
         // limited time so I'm just going to proxy this request directly from github
-        $.getJSON( "https://crossorigin.me/https://raw.githubusercontent.com/allylabs/fed-coding-challenge/master/code-test.json", function(data) {
+        $.getJSON( "https://crossorigin.me/https://raw.githubusercontent.com/allylabs/fed-coding-challenge/public/code-test.json", function(data) {
             var rowCounter = 0;
             $.each(data, function(key, val) {
                 // even, including 0
